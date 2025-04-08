@@ -25,8 +25,6 @@ Breakdown:
 
 
 # 1. Clone this repo
-git clone https://github.com/yourusername/log-threat-intel-suite.git
-cd log-threat-intel-suite
 
 # 2. Run any detector
 python xss_detector.py
