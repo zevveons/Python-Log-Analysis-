@@ -1,35 +1,38 @@
 # Python-Log-Analysis-
-📂 Reads and Parses Log File 🧠 Processes Each Log Entry into a Dictionary lines  📊 Performs Log Analysis
+What does it do? 
+- 🚨 DDoS attacks
+- 🛡️ SQL Injection attempts
+- 🧪 Cross-Site Scripting (XSS)
+- 🔐 Brute-force login attempts
+- 🕵️ 404 scanning bots
+- 🚩 Suspicious IP activity from known bad ranges
+
+Skills Demonstrated:
+- 🧩 Regular Expressions (log parsing, pattern detection)
+- 🧠 Security Analysis (DDoS, SQLi, XSS detection heuristics)
+- 📊 Data Aggregation (requests/hour, top IPs, URL hits)
+- 🕵️ Threat Intelligence (404 scanning, brute-force detection, login targeting)
+- 📁 File I/O & Stream Processing
+- 🧼 Clean OOP Design (modular classes per detection type)
+- 🕰️ Time Windowing & Rate Limiting Logic (DDoSDetector)
+- 🔍 Encoded payload inspection (XSS and SQLi decoding logic)
+
+Breakdown:
+- `LogAnalyzer`: Core log parser + report generator
+- `DDoSDetector`: Detects burst requests from single IPs within a time window
+- `SQLiDetector`: Finds patterns indicating SQL injection attempts
+- `XSSDetector`: Detects reflected/script-based injection in URLs
 
 
-Reads each line and uses regex to extract:
-IP address
+# 1. Clone this repo
+git clone https://github.com/yourusername/log-threat-intel-suite.git
+cd log-threat-intel-suite
 
-Timestamp
+# 2. Run any detector
+python xss_detector.py
+python sqli_detector.py
+python ddos_detector.py
+python log_analyzer.py
 
-HTTP method
-
-URL path
-
-Status code (200, 404, etc.)
-
-Response size in bytes
-
-Converts each valid log line into a structured Python dictionary, Skips malformed or unmatched lines
-
-
-
-📋 Prints Full Summary Report Including 
-🚩 Flags Known Bad IP Ranges
-🎯 Login/Admin Page Targeting
-🕵️ 404 Scanner Detection
-🔐 Failed Login Detection
-⏰ Requests Per Hour🔗
-Top Requested URLs
-🌐Top IPs
-
-
-
-HOW IT WORKS:
-Both Files function together, download both and run the loganalyzer.py to make it scan the text file add any additional HTTP request or change the request do whatever you please!
-
+# 3. Logs
+Replace "testing.txt" with your own Apache-style log file. Or see the results for yourself!
